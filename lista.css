@@ -1,0 +1,64 @@
+/* Zerar o padding e margin padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do navbar */
+.navbar {
+    background-color: #030529; /* Azul */
+    width: 100%; /* Ocupar toda a largura */
+    padding: 15px 20px; /* Ajustar o padding da navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixar no topo da página */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Manter o navbar acima de outros elementos */
+    height: 60px; /* Definir a altura da navbar */
+}
+
+/* Empurrar o conteúdo para baixo por causa do navbar fixo */
+body {
+    color: black;
+    font-size: larger;
+    padding-top: 60px; /* Compensar a altura do navbar */
+    background: #141E30;  /* fallback for old browsers */
+    /* display: flex; */
+    justify-content: center;
+}
+
+/* Estilo da logo */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Links da navbar */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Efeito hover nos links */
+.nav-links a:hover {
+    color: #d3d3d3;
+}
+
+/* Garantir que a página ocupe toda a altura
